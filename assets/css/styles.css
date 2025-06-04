@@ -47,9 +47,9 @@ body {
     body { margin: 10vh auto; }
 }
 
-h1 { font-size: 1em; }
+h1 { font-size: 0.9em; }
 
-h2 { font-size: 0.9em; }
+h2 { font-size: 0.7em; }
 
 li { list-style: none; }
 
@@ -59,9 +59,12 @@ a {
 }
 
 img { 
-    /* max-inline-size: 100%; */
     width: 20%;
     block-size: auto;
+}
+
+@media screen and (max-width: 400px) {
+    img { width: 60%; }
 }
 
 button,
@@ -79,6 +82,12 @@ hr {
     height: 2px;
     background-color: var(--button-border-clr);
     margin: 2em 0
+}
+
+input:focus,
+li>a:focus {
+    outline: 1px solid var(--button-border-clr);
+    outline-offset: 1px;
 }
 
 
@@ -190,6 +199,15 @@ input {
     border-radius: 5px;
 }
 
+.subscribe-btn:hover {
+    background-color: rgb(190 118 92);
+}
+
+.subscribe-btn:focus{
+    outline: 1px solid var(--input-field-clr);
+    outline-offset: 1px; 
+}
+
 
 /*-----------------------------------*\
   #LINKS CONTAINER
@@ -197,7 +215,7 @@ input {
 
 .links-container {
     display: grid;
-    gap: 0.5em;
+    gap: 1.5em;
 }
 
 @media screen and (max-width: 870px) {
@@ -206,20 +224,12 @@ input {
 
 .link { 
     font-size: 0.7em; 
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
+.footer-list {
+    margin-top: 0.9em;
+}
 
-/* 
-
-.links-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-/* .sub-title { margin-top: 2em; } */
-
-/* .link { margin-top: 0.7em; } */
 
 
