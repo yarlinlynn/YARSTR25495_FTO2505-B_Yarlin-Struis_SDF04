@@ -13,9 +13,12 @@
 </head>
 <body>
     <footer aria-label="Site Footer" class="footer">
+        <!-- This container contains my form and ul links separately allowing me to flex-wrap when styling -->
         <div class="container">
+
             <section class="form-container">
                 <h1 class="title">Subscribe to our newsletter for updates</h1>
+                <!-- form containing input and button -->
                 <form aria-label="Newsletter Subscription">
                     <label for="email" class="visually-hidden">Email Address</label>
                     <input 
@@ -28,6 +31,7 @@
                     <button class="subscribe-btn" type="submit">Subscribe</button>
                 </form>  
             </section>
+            <!-- Links container containing my h2 and ul -->
             <div class="links-container">
                 <h2 class="sub-title">Quick Links</h2>
                 <ul class="footer-list">
@@ -42,6 +46,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="links-container">
                 <h2 class="sub-title">Technologies</h2>
                 <ul class="footer-list">
@@ -57,7 +62,10 @@
                 </ul>
             </div>
         </div>
+        <!-- border line in design but is ignored by screen readers -->
         <hr aria-hidden="true" />
+
+        <!-- div holds my image of codespace logo -->
         <div class="footer-logo">
             <img
             src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
