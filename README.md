@@ -46,12 +46,13 @@ The Responsive Footer Challenge focuses on implementing a website footer that ad
 </br>
 
 ## 📁 Project Structure
+```plaintext
 ├── index.html                # Main HTML file
 ├── assets/
 │   └── css/
 │       └── styles.css        # External stylesheet
 └── README.md                 # Project documentation
-
+``` 
 ## 📸 Demo Screenshot
 ![alt text](assets/images/responsive-desktop.png)
 
